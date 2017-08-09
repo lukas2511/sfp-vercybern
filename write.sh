@@ -1,15 +1,23 @@
 #!/bin/bash
 
 #NEWSTR="CISCO-FINISAR  "
- VENDOR="CYBER CYBER CYB"
+ VENDOR="CISCO DISCO LTD."
 
 #SERIAL="FNS17521U7B     "
- SERIAL="CYBER CYBER CYBE"
+ SERIAL="FLOOR IS CYBER  "
 
 #PARTNO="FTLX8570D3BCL-C2A   "
- PARTNO="CYBER CYBER CYBER CY"
+ PARTNO="BUT... WHY?!    "
 
-if [[ ! "${#VENDOR}" = "15" ]] || [[ ! "${#SERIAL}" = "16" ]] || [[ ! "${#PARTNO}" = "20" ]]; then
+#REV="    "
+ REV="NOPE"
+
+#DATE="131226"
+ DATE="------"
+
+PARTNO="${PARTNO}${REV}"
+SERIAL="${SERIAL}${DATE}"
+if [[ ! "${#VENDOR}" = "16" ]] || [[ ! "${#SERIAL}" = "22" ]] || [[ ! "${#PARTNO}" = "20" ]]; then
 	echo "NOOOPE!"
 	exit 1
 fi
